@@ -1,0 +1,19 @@
+name: main
+
+on: 
+  push:
+    branches:
+     - main
+
+jobs:
+  test:
+    name: run qmate sample tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      # runs automated web application walkthrough in Chrome
+      # does not build project or install any dependencies locally
+      - name: run qmate config.js
+        run: npm test
+        
