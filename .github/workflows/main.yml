@@ -12,9 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: install qmate
-        run: npm config set registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm/
       - name: install qmate
         run: npm install qmate@latest -g
       - name: install qmate
