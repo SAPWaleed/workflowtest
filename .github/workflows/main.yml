@@ -12,8 +12,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      # runs automated web application walkthrough in Chrome
-      # does not build project or install any dependencies locally
+      
+      - name: install qmate
+        run: npm config set registry=https://int.repositories.cloud.sap/artifactory/api/npm/build-milestones-npm/
+      - name: install qmate
+        run: npm install qmate@latest -g
+      - name: install qmate
+        run: qmate update-chromedriver
+
+      
+      # runs automated web application walkthrough in Chrome    
       - name: run qmate config.js
         run: npm test
         
