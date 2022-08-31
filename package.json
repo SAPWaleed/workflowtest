@@ -1,0 +1,19 @@
+{
+  "name": "ui5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SAPWaleed/workflowtest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SAPWaleed/workflowtest/issues"
+  },
+  "homepage": "https://github.com/SAPWaleed/workflowtest#readme"
+}
