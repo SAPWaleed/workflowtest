@@ -17,5 +17,5 @@ jobs:
       - name: install qmate
       # runs automated web application walkthrough in Chrome    
       - name: run qmate config.js
-        run: run
+        run: run run
         
