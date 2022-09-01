@@ -15,10 +15,7 @@ jobs:
       - name: install qmate
         run: npm install qmate@latest -g
       - name: install qmate
-        run: qmate update-chromedriver
-
-      
       # runs automated web application walkthrough in Chrome    
       - name: run qmate config.js
-        run: npm test
+        run: run
         
