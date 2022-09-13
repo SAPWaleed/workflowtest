@@ -15,6 +15,7 @@ jobs:
       - name: install qmate
         run: npm install qmate@latest -g
       - name: install qmate
+        uses: actions/checkout@v2
       # runs automated web application walkthrough in Chrome    
       - name: run qmate config.js
         run: run run
